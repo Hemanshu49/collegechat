@@ -1,13 +1,10 @@
 import React, { useState } from 'react';
 import {FaBars}from "react-icons/fa";
 import { CgProfile } from "react-icons/cg";
-import { IoCallOutline , IoVideocamOutline , IoSettingsOutline} from "react-icons/io5";
+import { IoCallOutline , IoVideocamOutline , IoSettingsOutline ,IoChatboxOutline} from "react-icons/io5";
 import { CiLogout } from "react-icons/ci";
 import "./sidenavbar.css";
- import { Link} from 'react-router-dom';
-import Profile from './profile';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-
+import { Link} from 'react-router-dom';
 
 const Dash = ({children}) => {
     const[isOpen ,setIsOpen] = useState(false);
@@ -17,6 +14,11 @@ const Dash = ({children}) => {
             path:"/profile",
             name:"Profile",
             icon:<CgProfile />
+        },
+        {
+            path:"/page",
+            name:"Chat",
+            icon:<IoChatboxOutline/>
         },
         {
             path:"/call",
@@ -34,7 +36,7 @@ const Dash = ({children}) => {
             icon:<IoSettingsOutline />
         },
         {
-            path:"/logout",
+            path:"/",
             name:"Logout",
             icon:<CiLogout />
         }
@@ -58,7 +60,7 @@ const Dash = ({children}) => {
                }
            </div>
            <div style={ {width: "300px"}}>
-            <main>{children}</main>
+            {/* <main>{children}</main> */}
             {/* <div>{Content}</div> */}
            </div>
         </div>

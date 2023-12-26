@@ -5,41 +5,39 @@ import Login from './components/Login';
 import Signup from './components/signup';
 import Homepage from './components/homepage';
 import Profile from './components/profile';
-import Dash from './components/Dash';
+// import Dash from './components/Dash';
 import Page from './components/page';
-import Main from './main';
+import Setting from './components/setting';
+import Video from './components/video';
+// import Main from './main';
 
 function App() {
-  // State to track whether the preloader has been shown
   const [preloaderShown, setPreloaderShown] = useState(true);
-
-  // useEffect to hide the preloader after initial render
   useEffect(() => {
-    // Set a timeout to hide the preloader after a delay (e.g., 2000 milliseconds)
     const timeoutId = setTimeout(() => {
       setPreloaderShown(false);
     }, 20000);
 
-    // Clear the timeout if the component is unmounted before the delay
     return () => clearTimeout(timeoutId);
   }, []);
 
   return (
     <>
-     {preloaderShown && <PreLoader />} {/* Show preloader only if preloaderShown is true */}
+     {preloaderShown && <PreLoader />}    
       <Router>
         <div className="App">
          
           <Routes>
-          {/* <Route path="/Dash" element={<Dash/>}/> */}
             <Route path="/" element={<Homepage />} />
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Signup />} />
             <Route path="/page" element={<Page/>}/>
-            {/* <Route path="/profile" element={<Profile/>}/> */}
+            <Route path="/profile" element={<Profile/>}/>
+            <Route path="/setting" element={<Setting/>}/>
+            <Route path="/video" element={<Video/>}/>
           </Routes>
         </div>
-        <Main/>
+        {/* <Main/> */}
       </Router>
     </>
   );
