@@ -3,7 +3,7 @@ import {FaBars}from "react-icons/fa";
 import { CgProfile } from "react-icons/cg";
 import { IoCallOutline , IoVideocamOutline , IoSettingsOutline ,IoChatboxOutline} from "react-icons/io5";
 import { CiLogout } from "react-icons/ci";
-import "./sidenavbar.css";
+import "../css/sidenavbar.css";
 import { Link} from 'react-router-dom';
 
 const Dash = ({children}) => {

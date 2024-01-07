@@ -1,0 +1,11 @@
+#chatpart {
+    display: inline-flex;
+}
+
+#mespart {
+    display: inline-flex;
+}
+
+#maindiv {
+    flex-direction: column;
+}

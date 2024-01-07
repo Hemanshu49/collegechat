@@ -1,5 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import '../css/homepage.css'
 
 const Homepage = () => {
   const navigate = useNavigate();
@@ -26,6 +27,7 @@ const Homepage = () => {
         type="button"
         className="btn btn-primary"
         onClick={handleButtonClick}
+        id="startbtn"
       >
         Get Started
       </button>
