@@ -1,6 +1,6 @@
 import React from "react";
-import './Login.css';
-import './signup.css';
+import '../css/Login.css';
+import '../css/signup.css';
 import {Link } from 'react-router-dom';
 import {FaUser , FaLock} from "react-icons/fa";
 import { MdOutlineEmail } from "react-icons/md";

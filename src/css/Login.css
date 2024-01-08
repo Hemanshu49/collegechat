@@ -120,3 +120,70 @@ body {
 .register-link p a:hover{
     text-decoration: underline;
 } */
+
+.wrapper {
+    background-color: white;
+    max-width: fit-content;
+    padding: 20px;
+    margin: auto;
+    margin-top: 14%;
+    border-radius: 15px;
+    box-shadow: 4px 4px 10px;
+}
+
+.input-box input {
+    padding-right: 50px;
+    border: 0;
+    height: 30px;
+}
+
+.input-box {
+    background-color: white;
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 15px;
+}
+
+.icon {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.input-box input::placeholder {
+    font-size: larger;
+}
+
+#checkbox {
+    font-size: larger;
+}
+
+#logbut {
+    margin-top: 20px;
+    border-radius: 5px;
+    height: 30px;
+    width: fit-content;
+    /* box-shadow: 3px 3px 4px; */
+    background-color: aqua;
+}
+
+#logbut:hover {
+    box-shadow: 3px 3px 4px;
+    letter-spacing: 2px;
+    font-weight: bolder;
+}
+
+#logtitle {
+    margin-top: 20px;
+    margin-bottom: 0;
+    filter: drop-shadow(2px 2px 2px grey);
+}
+
+#hr {
+    background: black;
+    background-color: black;
+    height: 5px;
+    width: 80px;
+    margin-top: 0;
+    margin-bottom: 20px ;
+}
